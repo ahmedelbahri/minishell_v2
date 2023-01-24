@@ -24,7 +24,8 @@ void	ft_echo(char **str)
 		check ++;
 		i++;
 	}
-	while (str[i])
+	while ((str[i] && ft_strcmp(str[i], " "))
+		|| (str[i] && !ft_strcmp(str[i], " ") && str[i + 1] != NULL))
 	{
 		printf("%s", str[i]);
 		i++;
