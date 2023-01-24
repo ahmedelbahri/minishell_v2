@@ -19,15 +19,15 @@ char	*ft_substr_lex(char *s, unsigned int start, size_t end)
 
 	if (!s)
 		return (0);
-	if (start >= ft_strlen(s))
+	if ((int)start >= ft_strlen(s))
 		return (ft_strdup(""));
-	if (ft_strlen(s) < end)
+	if (ft_strlen(s) < (int)end)
 		end = ft_strlen(s);
 	s1 = (char *)malloc(sizeof(char) * end + 1);
 	if (s1 == 0)
 		return (0);
 	i = 0;
-	while (start < end)
+	while ((size_t)start < end)
 	{
 		s1[i] = s[start];
 		i++;
