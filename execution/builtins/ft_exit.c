@@ -30,7 +30,6 @@ int	is_digit(char *str)
 int	ft_exit(char **str)
 {
 	int	i;
-	int	num;
 
 	i = 1;
 	if (!str[i])
