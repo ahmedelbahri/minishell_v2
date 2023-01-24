@@ -15,7 +15,6 @@
 char	*ft_strlcpy(char **dst, char *src, int dstsize)
 {
 	int	i;
-	int	srcsize;
 
 	i = 0;
 	(*dst) = malloc((dstsize + 1) * sizeof(char));
