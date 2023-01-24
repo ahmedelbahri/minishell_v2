@@ -35,7 +35,7 @@ SRC = minishell.c \
 OBJ = $(SRC:.c=.o)
 	
 %.o:%.c
-	$(CC) -I $(shell brew --prefix readline)/include -c $< -o $@
+	$(CC) $(CFLAGS) -I $(shell brew --prefix readline)/include -c $< -o $@
 	
 all: $(LIBFT) $(NAME)
 
