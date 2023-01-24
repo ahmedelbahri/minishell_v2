@@ -34,7 +34,7 @@ BNS_OBJ = $(BNS:.c=.o)
 all: $(NAME)
 
 %.o:%.c
-	$(C) -c $<
+	$(C) $(CFLAGS) -c $<
 
 $(NAME): $(OBJ)
 	ar -rc $(NAME) $(OBJ)
