@@ -72,7 +72,6 @@ t_env	*create_list(char ***str)
 	t_env	*env;
 	char	**str1;
 	int		i;
-	int		j;
 
 	i = 0;
 	env = NULL;
